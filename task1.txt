@@ -1,0 +1,24 @@
+ Difference between HTTP1.1 vs HTTP2
+
+
+1. Multiplexing: 
+   - HTTP/1.1: In HTTP/1.1, only one request can be sent on a connection at a time. This means if you need multiple resources (like images, scripts, etc.) for a webpage, they have to be requested one after another, leading to potential delays.
+   - HTTP/2: With HTTP/2, multiple requests and responses can be sent and received simultaneously over a single connection. This speeds up the loading of web pages significantly, especially for complex pages with many resources.
+
+2. Header Compression:
+   - HTTP/1.1: Headers (metadata about the request or response) are sent as plaintext for every request and response. This can result in redundant data being sent, leading to increased overhead.
+   - HTTP/2: HTTP/2 compresses headers, reducing the amount of data that needs to be transmitted. This reduces latency and improves performance, especially on networks with high latency.
+
+3. Server Push:
+   - HTTP/1.1: Servers can only respond to client requests. If the server wants to send additional resources that the client hasn't requested yet, it can't.
+   - HTTP/2: Servers can proactively push resources to the client that it predicts will be needed soon based on the initial request. This can eliminate the need for the client to make additional requests, further speeding up page load times.
+
+4. **Binary Protocol**:
+   - HTTP/1.1: Uses plaintext for communication, which is human-readable but can be inefficient in terms of parsing and processing.
+   - HTTP/2: Employs a binary protocol, which is more efficient for machines to parse and process. While it's not human-readable, it's faster and more compact for computers to work with.
+
+5. **Backward Compatibility**:
+   - HTTP/1.1: Fully backward compatible with older HTTP/1.0 and HTTP/0.9 clients and servers.
+   - HTTP/2: Designed to be backward compatible with HTTP/1.1, allowing existing websites and infrastructure to transition gradually without needing a complete overhaul.
+
+Overall, HTTP/2 was designed to address many of the limitations and inefficiencies of HTTP/1.1, aiming to make web browsing faster and more efficient.

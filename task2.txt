@@ -1,0 +1,42 @@
+Write a blog about objects and its internal representation in Javascript
+
+1. **Objects in JavaScript**:
+   - Core data structure comprising key-value pairs.
+   - Dynamic nature allows for flexible manipulation of properties.
+
+2. **Internal Representation**:
+   - Utilizes hash tables for efficient storage and retrieval of properties.
+   - Assigns hidden classes to objects to optimize property access.
+
+3. **Hash Tables**:
+   - Employed by JavaScript engines for fast property lookup.
+   - Keys are hashed to determine storage index for values.
+
+4. **Hidden Classes**:
+   - Assigned to objects to define structure and behavior.
+   - Objects with similar structures share the same hidden class for optimization.
+
+5. **Inline Caching**:
+   - Technique to optimize property accesses and method calls.
+   - Caches accessed properties/methods for quicker future accesses.
+
+6. **Optimization Techniques**:
+   - Hash tables enable rapid property manipulation and retrieval.
+   - Hidden classes and inline caching enhance performance by streamlining property access.
+
+7. **Impact on Performance**:
+   - Understanding object representation aids in writing efficient code.
+   - Optimization techniques contribute to faster execution and improved performance.
+
+8. **Developers' Role**:
+   - Developers can leverage knowledge of internal representation for better code optimization.
+   - Efficient object handling leads to more scalable and performant applications.
+
+9. **Continued Evolution**:
+   - JavaScript's object representation evolves alongside language advancements.
+   - Developers should stay updated to leverage new optimization opportunities.
+
+10. **Practical Application**:
+    - Mastery of object representation enhances developers' ability to write optimized code.
+    - Efficient code contributes to faster web applications and improved user experience.
+
